@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+  <script src="vue.js"> </script>
+</head>
+<body>
+
+
+<div id="apps">
+    <!-- header section starts  -->
+<header>      
+    <a href="#" class="logo"><i class="fas fa-graduation-cap"></i>LEARN</a>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="active">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="teachers.html">teacher</a></li>
+            <li><a href="course.html">course</a></li>
+            <li><a href="review.html">review</a></li>
+            <li><a href="price.html">price</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="fas fa-bars"></div>
+    
+    </header>
+    
+    <!-- header section ends -->
+
+    <br>
+    <br>
+    <br>
+    <section class="about" id="about">
+
+        <h1 class="heading">about us</h1>
+        <h3 class="title">start your journey with us</h3>
+        
+        <div class="row">
+        
+            <div class="content">
+                <h3>start your journey to a better life with our practical courses</h3>
+                <p>No matter what your coding goals are, the best place to start is by building a strong foundation. Similar to a college course, this Path will teach you how to think and code like a professional. You’ll learn Computer Science fundamentals, build a professional portfolio, and prepare for an entry-level role in tech.</p>
+                <button v-on:click="isHidden = !isHidden" >learn more</button>
+
+                <p v-if="isHidden"> You really feel like there’s nothing you can’t learn, 
+                    which in turn builds so much confidence in your <br> skills and gives the momentum to keep learning. </p>
+            </div>
+        
+            <div class="image">
+                <img src="images/course.jpg" alt="">
+            </div>
+        
+        </div>
+        
+        </section>
+
+        
+
+        <section class="footer">
+
+            <div class="icons">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-github"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+            
+            <div class="credit">created by <span>Ms. Aisanym |  Ms. Nazerke  | Ms. Kymbat</span> | SDU 2021</div>
+            
+            </section>
+            
+             
+        </div>
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js.js"></script>
+</body>
+</html>
